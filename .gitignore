@@ -1,0 +1,6 @@
+st_clickable_images/frontend/node_modules/
+st_clickable_images/frontend/build/
+build/
+dist/
+.vscode/
+st_clickable_images.egg-info/
