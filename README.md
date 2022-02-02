@@ -16,6 +16,7 @@ pip install st-clickable-images
 
 ```python
 import streamlit as st
+from st_clickable_images import clickable_images
 
 clicked = clickable_images(
     [
