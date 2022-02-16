@@ -34,6 +34,29 @@ clicked = clickable_images(
 st.markdown(f"Image #{clicked} clicked" if clicked > -1 else "No image clicked")
 ```
 
+This works as well with local images if you use `base64` encodings:
+
+```python
+import base64
+import streamlit as st
+from st_clickable_images import clickable_images
+
+images = []
+for file in ["image1.jpeg", "image2.jpeg"]:
+    with open(file, "rb") as image:
+        encoded = base64.b64encode(image.read()).decode()
+        images.append(f"data:image/jpeg;base64,{encoded}")
+
+clicked = clickable_images(
+    images,
+    titles=[f"Image #{str(i)}" for i in range(len(images))],
+    div_style={"display": "flex", "justify-content": "center", "flex-wrap": "wrap"},
+    img_style={"margin": "5px", "height": "200px"},
+)
+
+st.markdown(f"Image #{clicked} clicked" if clicked > -1 else "No image clicked")
+```
+
 ## Usage
 
 **clickable_images(paths,
