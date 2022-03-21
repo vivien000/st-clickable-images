@@ -1,5 +1,7 @@
 # st-clickable-image
 
+*[You might be interested by [st-click-detector](https://github.com/vivien000/st-click-detector) which generalizes this component]*
+
 `st-clickable-images` is a [Streamlit](https://streamlit.io) component to display one or several images and detect when they are clicked on.
 
 ![Screenshot](screenshot.gif)
