@@ -70,7 +70,7 @@ Displays one or several images and returns the index of the last image clicked o
 
 ### Parameters
 
-- `paths` (list): the list of URLS of the images
+- `paths` (list): the list of URLs of the images
 - `titles` (list): the (optional) titles of the images
 - `div_style` (dict): a dictionary with the CSS property/value pairs for the div container
 - `img_style` (dict): a dictionary with the CSS property/value pairs for the images
